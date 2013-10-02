@@ -1,25 +1,51 @@
 #include <stdio.h>
+#include <getopt.h>
+#include <string.h>
+#include <unistd.h>
+#include <stdlib.h>
 
-  int main( ) {
 
-  int count = 100;
+
+
+/*
+ *   Main entry point.
+ *  
+ *   @param argc The argument count.
+ *   @param argv The argument vector.
+ *   @return The exit code.
+ */
+
+
+
+int main(int argc, char *argv[] ) {
+
+
+
+/* initial filtering for Primes 
+ * filter for numbers divisable
+ * by 2, 3, 5
+ */
+
+  int increments = 100;
   int result = 0;
 
-  for(; count > 0; count--)
+
+
+  for(; increments > 0; increments--)
   {
-      if((count%2) == 0)
+      if((increments%2) == 0)
         {
         }
-        else if((count%3) == 0)
+        else if((increments%3) == 0)
         {
         }
-          else if((count%5) == 0)
+          else if((increments%5) == 0)
           {
           }
             else
               {
                 result++;
-                printf("%d\t : %d\n", count, result);
+                printf("%d\t : %d\n", increments, result);
               }
 
   }
