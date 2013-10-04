@@ -3,13 +3,16 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include "prime-structs.h"
 
 
-struct node {
-  int val;
-  int result;
-  struct node *next;
-};
+
+
+//struct node {
+//  int val;
+//  int result;
+//  struct node *next;
+//};
 
 
 
@@ -35,8 +38,8 @@ int main(int argc, char *argv[] ) {
 
   int increments = 100;
   int result = 0;
-  struct node *current_node;
-  struct node *end_node;
+  struct node_s *current_node;
+  struct node_s *end_node;
 
   //initize end_node
   end_node = NULL;
@@ -59,7 +62,7 @@ int main(int argc, char *argv[] ) {
                 result++;
 
                 //creating memmory space for current node
-                current_node = malloc( sizeof(struct node));
+                current_node = malloc( sizeof(struct node_s));
                 // -> is used in this instance because current_node
                 // is a pointer and not a simple struct
                 current_node->val = increments;
@@ -77,7 +80,7 @@ int main(int argc, char *argv[] ) {
   }// end of for
 
 
-
+ //lets see what in the linked list!
 
   while(current_node != NULL)
   {
