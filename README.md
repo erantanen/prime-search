@@ -9,6 +9,15 @@ Okay was playing with some silly ideas, and looking over my many FizzBuzz progra
 This is in a very rough state, and as all ideas, I am looknig to break this apart to use with threads and mpi.
 
 
+The program is very simple:
+ - it pulls a start:end point for search of primes
+ - moduls is used at 2,3,5 rotations
+ - a list is built
+ - sqrt is ran against list (not done yet)
+ - output of list
+
+
+ 
 
 
 
@@ -22,8 +31,16 @@ make
 
 Execute
 -------
-prime-search
 
+To execute the program you can use the following arguments:
+ - **-h**: outputs the help text
+ - **-v**: outputs a arbitrary version number
+ - **-s**: starting number
+ - **-e**: ending number
+
+Example:
+```
+./prime-search -s 0 -e 100
 
 
 
