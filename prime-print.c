@@ -5,7 +5,7 @@
  * Output version information.
  */
 void version_print() {
-  printf("\n prime-print v0000.1 Oct,4  2013\n\n");
+  printf("\n prime-print v001.1 Oct,6  2013\n\n");
 }
 
 /**
