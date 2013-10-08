@@ -1,5 +1,5 @@
-CC=gcc
-CFLAGS=-Wall -I. -pthread
+CC=gcc -lm
+CFLAGS=-Wall -I. -pthread  
 LDFLAGS=-pthread
 SOURCES=prime-search.c prime-print.c prime-print.h
 OBJECTS=$(SOURCES:.c=.o)

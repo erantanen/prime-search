@@ -4,7 +4,8 @@
 
 
 typedef struct node_s {
-  int val;
+  int val_int;
+  int val_flag;
   int result;
   struct node_s *next;
 } node_s;

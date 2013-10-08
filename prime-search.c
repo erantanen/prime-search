@@ -3,6 +3,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <math.h>
 #include "prime-structs.h"
 #include "prime-print.h"
 
@@ -76,6 +77,7 @@ int main(int argc, char *argv[] ) {
  * */
 
   int result = 0;
+  float test_float = 0.000000;
   struct node_s *current_node;
   struct node_s *end_node;
 
@@ -103,7 +105,7 @@ int main(int argc, char *argv[] ) {
                 current_node = malloc( sizeof(struct node_s));
                 // -> is used in this instance because current_node
                 // is a pointer and not a simple struct
-                current_node->val = end;
+                current_node->val_int = end;
                 current_node->result = result;
 
                 // pont to next node
@@ -118,6 +120,29 @@ int main(int argc, char *argv[] ) {
   }// end of for
 
 
+  // resetting head of chain
+    current_node = end_node;
+
+
+  //sqrt check
+   while(current_node != NULL)
+    {
+      if((sqrt(current_node->val_int) - (int)sqrt(current_node->val_int)) != test_float)
+           { 
+              //flag set if numbers is not a square
+               current_node->val_flag = 1;
+           }
+
+      current_node = current_node->next;
+    }
+  
+
+  // resetting head of chain
+      current_node = end_node;
+  
+  
+
+
  //lets see what in the linked list!
 
     printf("\n\n");
@@ -126,7 +151,10 @@ int main(int argc, char *argv[] ) {
 
   while(current_node != NULL)
   {
-    printf("%d \t\t %d\n", current_node->val, current_node->result);
+    if(current_node->val_flag == 1)
+     {
+        printf("%d \t\t %d\n", current_node->val_int, current_node->result);
+     }
     current_node = current_node->next;
   }
 
