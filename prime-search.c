@@ -112,11 +112,8 @@ int main(int argc, char *argv[] ) {
                 current_node->next = end_node;
                 //setting up next node as current node
                 end_node = current_node;
-
-              // printf("%d\t : %d\n", count, result);
-
-              }
-
+  
+            }
   }// end of for
 
 
@@ -127,6 +124,16 @@ int main(int argc, char *argv[] ) {
   //sqrt check
    while(current_node != NULL)
     {
+          // *note*  this is a simple number test
+          //  if current  node value = 9
+          //  its squareroot is pushed as a float will = 3.000000
+          //  if current node  value = 10
+          //  its squareroot is 3.162277
+          //  an int cast is made against the sqrt float
+          //  example:
+          //  (3.16227 - 3) test against 0.000000
+          //  if subtraction result is 0 then it is a square
+          //
       if((sqrt(current_node->val_int) - (int)sqrt(current_node->val_int)) != test_float)
            { 
               //flag set if numbers is not a square
