@@ -19,9 +19,9 @@ The program is very simple:
 
 **
 Todo:
- major makefile clean
- adjust linklist to make smaller
- adjust printing so it does not scroll off of page (silly tweek) 
+ - major makefile clean
+ - adjust linklist to make smaller
+ - adjust printing so it does not scroll off of page (silly tweek) 
 
 
 
