@@ -5,14 +5,18 @@
  * Output version information.
  */
 void version_print() {
-  printf("\n prime-print v001.1 Oct,6  2013\n\n");
+  printf("\n prime-print v001.5 Oct,6  2013\n\n");
 }
 
 /**
  * Output helpful information for the uninformed.
  */
 void help_print() {
-  printf("blah help\n");
+  printf("\nprime-search:\n");
+  printf("\tIt is a roughed out tool to find primes!\n");
+  printf("\tmore on this when I get some times the reall hard part now starts\n ");
+  printf("\ta good ref for the list is: \n");
+  printf("\thttp://primes.utm.edu/lists/small/10000.txt\n\n");
 }
 
 

@@ -6,7 +6,9 @@ Okay was playing with some silly ideas, and looking over my many FizzBuzz progra
  
  (more later)
  
-This is in a very rough state, and as all ideas, I am looknig to break this apart to use with threads and mpi.
+This is in a very rough state,  I am looknig to break this apart to use with threads and mpi now that I have aprox 3/4's of the numbers removed with the moduls and sqrt tests. 
+
+
 
 
 The program is very simple:
@@ -14,14 +16,15 @@ The program is very simple:
  - moduls is used at 2,3,5 rotations
  - a list is built
  - sqrt is ran against list 
- - output of list
+ - output of list (unfinished list)
 
 
 **
 Todo:
  - major makefile clean
  - adjust linklist to make smaller
- - adjust printing so it does not scroll off of page (silly tweek) 
+ - build threads 
+ - seperate list and work layered division
 
 
 

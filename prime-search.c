@@ -146,14 +146,14 @@ int main(int argc, char *argv[] ) {
  //lets see what in the linked list!
 
     printf("\n\n");
-    printf("Possible \tList of\n");
-    printf("Numbers \tNumbers\n");
+ //   printf("Possible \tList of\n");
+ //   printf("Numbers \tNumbers\n");
 
   while(current_node != NULL)
   {
     if(current_node->val_flag == 1)
      {
-        printf("%d \t\t %d\n", current_node->val_int, current_node->result);
+        printf(" %d \t",  current_node->val_int);
      }
     current_node = current_node->next;
   }
