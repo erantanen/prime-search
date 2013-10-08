@@ -50,6 +50,8 @@ Example:
 ./prime-search -s 0 -e 100
 
 
-Expected output:
-```
+Expected output: a short version
  7 	 11 	 13 	 17 	 19 	 23 	 29 	 31 	 37 	 41 
+```
+
+
