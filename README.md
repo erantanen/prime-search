@@ -13,11 +13,15 @@ The program is very simple:
  - it pulls a start:end point for search of primes
  - moduls is used at 2,3,5 rotations
  - a list is built
- - sqrt is ran against list (not done yet)
+ - sqrt is ran against list 
  - output of list
 
 
- 
+**
+Todo:
+ major makefile clean
+ adjust linklist to make smaller
+ adjust printing so it does not scroll off of page (silly tweek) 
 
 
 
