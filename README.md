@@ -4,9 +4,14 @@ Primes: a search for
 
 Okay was playing with some silly ideas, and looking over my many FizzBuzz programs when I realized that they were the beginnings of prime searches.
  
- (more later)
  
 This is in a very rough state,  I am looknig to break this apart to use with threads and mpi now that I have aprox 3/4's of the numbers removed with the moduls and sqrt tests. 
+
+**
+Next step?
+Using the linkd list, use the list with a group of threads were each thread handles a node (or int) to run modulus against that number from a smaller and smaller list. 
+
+Because we only want so many threads running on one heap, use of mpi to create more heaps will be required as the search grows. As the serach grows so will the lenght of time the threads are working on each node. 
 
 
 
