@@ -156,15 +156,19 @@ int main(int argc, char *argv[] ) {
  //   printf("Possible \tList of\n");
  //   printf("Numbers \tNumbers\n");
 
+  int node_count = 0;
+
   while(current_node != NULL)
   {
     if(current_node->val_flag == 1)
      {
+        node_count = node_count + 1;
         printf(" %d \t",  current_node->val_int);
      }
     current_node = current_node->next;
   }
 
+  printf("\n node count = %d\n", node_count);
   printf("\n\n");
 
 
